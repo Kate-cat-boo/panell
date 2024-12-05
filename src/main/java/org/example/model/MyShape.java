@@ -15,6 +15,7 @@ public class MyShape {
 
     // конструктор по умолчанию
     public MyShape() {
+        public Color colorDefault = Color.pink;
         shape = new Rectangle2D.Double(); //фигура - прямоугольник
         color = Color.red; //цвет обводки
         fillBehavior = FillBih.FILL;
@@ -66,6 +67,7 @@ public class MyShape {
 
     public void setShape(RectangularShape shape) {
         this.shape = shape;
+        this.color = colorDefault;
     }
 
     public Color getColor() {

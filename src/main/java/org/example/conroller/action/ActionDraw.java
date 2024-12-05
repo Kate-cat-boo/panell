@@ -51,7 +51,7 @@ public class ActionDraw implements ActionInterface{
     public void createShape(Point point){
         p[0] = (Point2D)point;
         shape = sampleShape.clone();
-        model.createShape(shape);
+        model.addShape(shape);
     }
 
 
